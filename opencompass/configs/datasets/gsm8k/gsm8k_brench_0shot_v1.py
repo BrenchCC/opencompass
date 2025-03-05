@@ -11,7 +11,7 @@ gsm8k_infer_cfg = dict(
         type=PromptTemplate,
         template=dict(
             round=[
-                dict(role='HUMAN', prompt='{question}\nPlease put your final answer within \\boxed{}.'),
+                dict(role='HUMAN', prompt='{question}\nPlease reason step by step, and put your final answer within \\boxed{}.'),
             ],
         ),
     ),
