@@ -18,10 +18,10 @@ models = [
         tokenizer_path='/Users/bytedance/BrenchProjects/Graduation_Evaluation/opencompass/tokenizers_saves/qwen2_v1', # 请求服务时的 tokenizer name 或 path, 为None时使用默认tokenizer gpt-4
         rpm_verbose=True, # 是否打印请求速率
         meta_template=api_meta_template, # 服务请求模板
-        query_per_second=10, # 服务请求速率
-        max_out_len=32768, # 最大输出长度
-        max_seq_len=8192, # 最大输入长度
-        temperature=0.6, # 生成温度
+        query_per_second=1, # 服务请求速率
+        max_out_len=16384, # 最大输出长度
+        max_seq_len=16384, # 最大输入长度
+        temperature=0.7, # 生成温度
         batch_size=8, # 批处理大小
         retry=3, # 重试次数
     )
